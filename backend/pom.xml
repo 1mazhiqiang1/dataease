@@ -497,7 +497,7 @@
                                 <phase>generate-resources</phase>
                                 <configuration>
                                     <target>
-                                       <!-- <move todir="src/main/resources/static">
+                                        <move todir="src/main/resources/static">
                                             <fileset dir="../frontend/dist">
                                                 <exclude name="*.html"/>
                                             </fileset>
@@ -513,7 +513,7 @@
                                             </fileset>
                                         </copy>
                                         <copy file="../mobile/dist/index.html"
-                                              tofile="src/main/resources/templates/app.html"/>-->
+                                              tofile="src/main/resources/templates/app.html"/>
                                     </target>
                                 </configuration>
                                 <goals>
