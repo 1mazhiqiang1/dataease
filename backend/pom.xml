@@ -2,10 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-    <parent>
+<!--    <parent>
         <artifactId>dataease-server</artifactId>
         <groupId>io.dataease</groupId>
         <version>1.18.2</version>
+    </parent>-->
+
+    <version>1.18.2</version>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.4.3</version>
+        <relativePath/>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
@@ -488,7 +497,7 @@
                                 <phase>generate-resources</phase>
                                 <configuration>
                                     <target>
-                                        <move todir="src/main/resources/static">
+                                       <!-- <move todir="src/main/resources/static">
                                             <fileset dir="../frontend/dist">
                                                 <exclude name="*.html"/>
                                             </fileset>
@@ -504,7 +513,7 @@
                                             </fileset>
                                         </copy>
                                         <copy file="../mobile/dist/index.html"
-                                              tofile="src/main/resources/templates/app.html"/>
+                                              tofile="src/main/resources/templates/app.html"/>-->
                                     </target>
                                 </configuration>
                                 <goals>
